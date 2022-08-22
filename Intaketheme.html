@@ -1,0 +1,88 @@
+<!-- ********************** Begin Pega content ********************** -->
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8">  
+    <title>Payment</title>  
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/override.css">
+        <link href="./css/chunk-common.b6e72eca.css" rel="preload" as="style">
+        <link href="./css/chunk-common.b6e72eca.css" rel="stylesheet">
+    
+	<script src ='https://ipdemo.sbyteapps.com/prweb/app/afni-subro-assist_2858/?pzuiactionzzz=CXtpbn1vZXU3aVRjZkNSS1RlM3JyaWVhOXc5cm1VaFBMV1daS0xldkRkOXVqeHZIMXJPVjBuK2dyV1pOYmpQR0tFYWFN*'></script>
+    
+        <script> pega.web.mgr.isCookieConsentRequired = function() {return false;}</script>
+        <script> pega.web.api.doAction("PegaGadget","load");</script>
+   
+        <script>
+            function goToHome()
+              {
+               location.href = "overview.html";
+              }
+            var showRequestId = function(rtnValue)
+                {
+                   
+                   sessionStorage.setItem("OrderId",rtnValue);
+                   var poId = sessionStorage.getItem("OrderId");
+                   document.getElementById("orderNo").innerHTML = "Request ID: "+poId;
+                };
+            function setRequestId()
+                {
+                    var valueFromGadget = pega.web.api.doAction("PegaGadget", "getGadgetData", "pyWorkPage.pyID",{callback:showRequestId});
+                }
+          </script>
+         
+  </head>
+  <body>
+        <div class="form flex flex-col">
+            <header class="flex flex-col">
+               
+            </header>
+            <main class="flex flex-col">  
+               
+              <div class="row">
+                <div class="column left"><h5>Payment</h5></div>
+                <div id="poID" class="column right"><ih1 id="orderNo"></ih1></div>
+              </div>
+              
+             <div class="col col-4 primary-card">
+                
+				<!-- ********************** Begin Pega content ********************** -->
+		
+				
+<div data-pega-encrypted ='true' 
+data-pega-encrypted-hash = 'pzuiactionzzz=CXtpbn1Db243RlF3bTVtUjd2ajQzb3B0a1pZVmxKL21JZHdLRWp6WjVNdWRTMG0xNFdKdmFucDVXQ0lXU3RpM3FhelFkVDBKenY3VUdyWVRiOEVlazBnQy94VWppRUtheUlhL085aWcyRS8zaWtEWWs5elNaOFo4MW9yOXNNalJOQ0twbkxtWGdXdmhnekNjS0QyL1F0YSszUkxjcXMrMUdWZmQwSXUzL2RKRnc4S2QxWnloZlorQ1h6OE82aFY0Y2JJL0FFMlpVckNOM1V3M3BSV3NqNXhLVytMSjJCOWtTUTY1N2dETFBUUmNSenUzRlVoN0duQnFhc2tFN0ZtK3dhcFZRZ3lIZ3VPdnVTdi9GSmcvL3dTbWZJZUpEbHpJVzBIVkszV1VvVnN1c1FNUjFuaS9uTUpod2gxdzRGTERFVGxJdWh4RzlUaXRLak5wQjlONU1IK2tUMG13eGNYaitJYnBqakJyV0hTSjU2azZocStTY3djdW1FS2JTeGhlRWI2WHhjb1ViNHZmdzFNZlBsSG9zVEtONUtnOUhEWitiZGsxaUVuaXlmTzZzVlgvNXA3ZVhlSTlaWW1rZVg1YjI3Q015*' 
+data-pega-gadgetname ='PegaGadget' 
+data-pega-action ='createNewWork' 
+data-pega-action-param-classname ='Ttec-AFNISubr-Work-ProcessPayment' 
+data-pega-action-param-flowname ='' 
+data-pega-isretained ='false' 
+data-pega-isdeferloaded ='false' 
+data-pega-applicationname ='AFNISubr' 
+data-pega-threadname ='AFNISecurePaymentPortal' 
+data-pega-channelID ='MASHUP63acc7df524a4854a86f99216a4c5786' 
+data-pega-resizetype ='stretch' 
+data-pega-url ='https://ipdemo.sbyteapps.com/prweb/app/afni-subro-assist_2858/' 
+data-pega-action-param-parameters ='{"pzSkinName":"pyEndUser_HoneyFlower","pyMashupSkeletonName":"pyDefaultMashupSkeleton","UserIdentifier":"Afniwss","Password":"cnVsZXM="}' ></div>
+
+<!-- ********************** End Pega content ********************** -->
+
+
+             </div>
+             
+            </main>
+            <footer class="">
+                <div class="wrap flex">
+                <nav><div class="flex">
+                <a>About us</a>
+                <a>Reviews</a>
+                <a>Privacy</a>
+                </div>
+                </nav>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>    
+                    
+
+<!-- ********************** End Pega content ********************** -->
